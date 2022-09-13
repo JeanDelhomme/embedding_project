@@ -21,12 +21,12 @@ import embedding_reader as er
 import fasta_reader as fr
 
 import alignment_matrix_nw as am_nw
-import needleman_wunsch as nw
 
 import alignment_matrix_sw as am_sw
-import smith_waterman as sw
 
-import glocal as gl
+import alignment_algorithm as aa
+
+
 
 if __name__ == "__main__":
     
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         # Produces the alignment matrix needed to find the best path.
         alignment_matrix = am_nw.alignment_matrix_nw(dot_matrix) 
         # Finds the best path and thus, the sequence alignment.
-        nw.needleman_wunsch(fasta1, fasta2, prot_name1, prot_name2, \
+        aa.needleman_wunsch(fasta1, fasta2, prot_name1, prot_name2, \
                             alignment_matrix)
 
     # For Smith and Waterman (local alignment).
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         # Produces the alignment matrix needed to find the best path.
         alignment_matrix = am_sw.alignment_matrix_sw(dot_matrix)  
         # Finds the best path and thus, the sequence alignment.
-        sw.smith_waterman(fasta1, fasta2, prot_name1, prot_name2, \
+        aa.smith_waterman(fasta1, fasta2, prot_name1, prot_name2, \
                             alignment_matrix)
     
     # For a glocal alignment.
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         # Produces the alignment matrix needed to find the best path.
         alignment_matrix = am_sw.alignment_matrix_sw(dot_matrix)  
         # Finds the best path and thus, the sequence alignment.
-        gl.glocal(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix)
+        aa.glocal(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix)
         
     
     """
