@@ -2,7 +2,10 @@
 """
 Created on Thu Sep  8 14:44:59 2022
 
-@author: jeand
+@author: Jean Delhomme
+
+This file contains the function embeding_reader.
+
 """
 
 import numpy as np
@@ -10,12 +13,12 @@ import numpy as np
 def embedding_reader(file):
     """Transforms a .t5emb file into an array of vectors.
     
-    In a .t5emb file, each line corresponds to a residue and contains 1024 
+    In a .t5emb file, each line corresponds to a residue defined by x 
     values. These values represent the physico-chemecal propreties and 
     environnement of the residue.
     
-    The function creates a list containing a vector of 1024 values for each 
-    residue.
+    For each residue, a vector of x values is created.
+    The function creates an array of these vectors.
 
     Parameters
     ----------
@@ -28,7 +31,7 @@ def embedding_reader(file):
         An array containing a vector for each residue.
     """
     
-    # Sequence is the final list containing the vector. We initiating it.
+    # Sequence is the final list containing the vector. We are initiating it.
     sequence = []
     
     # Opens the file in the function argument.
