@@ -20,10 +20,7 @@ import numpy as np
 import embedding_reader as er
 import fasta_reader as fr
 
-import alignment_matrix_nw as am_nw
-
-import alignment_matrix_sw as am_sw
-
+import alignment_matrix as am
 import alignment_algorithm as aa
 
 
@@ -54,7 +51,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 6 or sys.argv[5] == "nw":
         
         # Produces the alignment matrix needed to find the best path.
-        alignment_matrix = am_nw.alignment_matrix_nw(dot_matrix) 
+        alignment_matrix = am.alignment_matrix_nw(dot_matrix) 
         # Finds the best path and thus, the sequence alignment.
         aa.needleman_wunsch(fasta1, fasta2, prot_name1, prot_name2, \
                             alignment_matrix)
@@ -63,7 +60,7 @@ if __name__ == "__main__":
     elif sys.argv[5] == "sw":
         
         # Produces the alignment matrix needed to find the best path.
-        alignment_matrix = am_sw.alignment_matrix_sw(dot_matrix)  
+        alignment_matrix = am.alignment_matrix_sw(dot_matrix)  
         # Finds the best path and thus, the sequence alignment.
         aa.smith_waterman(fasta1, fasta2, prot_name1, prot_name2, \
                             alignment_matrix)
@@ -72,7 +69,7 @@ if __name__ == "__main__":
     elif sys.argv[5] == "gl":
         
         # Produces the alignment matrix needed to find the best path.
-        alignment_matrix = am_sw.alignment_matrix_sw(dot_matrix)  
+        alignment_matrix = am.alignment_matrix_sw(dot_matrix)  
         # Finds the best path and thus, the sequence alignment.
         aa.glocal(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix)
         
