@@ -115,3 +115,5 @@ python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fast
 python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta sw
 python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta gl
 ```
+
+Some results are already available in embedding_project/results/proof_of_concept.
