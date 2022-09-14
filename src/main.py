@@ -12,6 +12,34 @@ fasta and embedding files.
 Users should follow the instructions described in the README.md file attached
 to the embedding_project repository.
 
+Parameters
+----------
+argv[1] : str
+    The name of the embeding file of the first protein.
+    
+argv[2] : str
+    The name of the fasta file of the first protein.
+
+argv[3] : str
+    The name of the embeding file of the second protein.
+
+argv[4] : str
+    The name of the fasta file of the second protein.
+
+argv[5] : str
+    OPTIONAL, the name of the alignment algorithm. 
+    By default, Needleman and Wunsch.
+    
+    nw : Needleman and Wunsch (global).
+    sw : Smith and Waterman (local).
+    gl : Glocal.    
+
+Returns
+-------
+file.txt
+    A text file containing the alignment result. The file is created in the
+    result repository.
+
 """
 # ligne de commande 
 # python3 main.py 5_3_exonuclease_1bgxt.t5emb 5_3_EXONUCLEASE_1BGXT.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw
