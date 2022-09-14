@@ -99,7 +99,7 @@ python3 main.py argv[1] argv[2] argv[3] argv[4] argv[5]
 ### Best case : optimal alignment
 
 ```bash
-python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta
 ```
 
 ### Worst case
@@ -112,6 +112,6 @@ python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta 7kD_DNA_binding_1azpa.t5emb 7K
 
 ```bash
 python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
-python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
-python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta sw
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta gl
 ```
