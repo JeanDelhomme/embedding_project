@@ -109,7 +109,7 @@ def needleman_wunsch(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix):
                       f"{result2}\n"
                       f"{prot_name2}\n\n")
 
-    file_name = (f"../results/Global_{prot_name1}_&_{prot_name2}.txt")
+    file_name = (f"../results/{prot_name1}_&_{prot_name2}_Global.txt")
 
     with open (file_name, "w") as file:
         file.write(writting_model)
@@ -208,7 +208,7 @@ def smith_waterman(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix):
                       f"{result2}\n"
                       f"{prot_name2}\n\n")
         
-        file_name = (f"../results/Local_{prot_name1}_&_{prot_name2}.txt")
+        file_name = (f"../results/{prot_name1}_&_{prot_name2}_Local.txt")
 
         with open (file_name, "a") as file:
             file.write(writting_model)
@@ -310,7 +310,7 @@ def glocal(fasta1, fasta2, prot_name1, prot_name2, alignment_matrix):
                       f"{result2}\n"
                       f"{prot_name2}\n\n")
         
-        file_name = (f"../results/Glocal_{prot_name1}_&_{prot_name2}.txt")
+        file_name = (f"../results/{prot_name1}_&_{prot_name2}_Glocal.txt")
 
         with open (file_name, "a") as file:
             file.write(writting_model)
