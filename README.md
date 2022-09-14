@@ -26,7 +26,7 @@ mamba env create -f binder/environment.yml
 Load conda environment:
 
 ```bash
-conda activate 3d-genome-builder
+conda activate embedding_project
 ```
 
 ## Add data
@@ -58,40 +58,41 @@ Run main.py :
 ```bash
 python3 main.py argv[1] argv[2] argv[3] argv[4] argv[5]
 ```
-
-Parameters :
-
-argv[1] : str
-
-    The name of the embeding file of the first protein.
-    
-argv[2] : str
-
-    The name of the fasta file of the first protein.
-
-argv[3] : str
-
-    The name of the embeding file of the second protein.
-
-argv[4] : str
-
-    The name of the fasta file of the second protein.
-
-argv[5] : str
-
-    OPTIONAL, the name of the alignment algorithm. 
-    By default, Needleman and Wunsch.
-    
-    nw : Needleman and Wunsch (global).
-    sw : Smith and Waterman (local).
-    gl : Glocal.    
-
-Returns :
-
-file.txt
-
-    A text file containing the alignment result. The file is created in the
-    results repository.
+> **Note**
+>
+>Parameters :
+>
+>argv[1] : str
+>
+>    The name of the embeding file of the first protein.
+>    
+>argv[2] : str
+>
+>    The name of the fasta file of the first protein.
+>
+>argv[3] : str
+>
+>    The name of the embeding file of the second protein.
+>
+>argv[4] : str
+>
+>    The name of the fasta file of the second protein.
+>
+>argv[5] : str
+>
+>    OPTIONAL, the name of the alignment algorithm. 
+>    By default, Needleman and Wunsch.
+>    
+>    nw : Needleman and Wunsch (global).
+>    sw : Smith and Waterman (local).
+>    gl : Glocal.    
+>
+>Returns :
+>
+>file.txt
+>
+>    A text file containing the alignment result. The file is created in the
+>    results repository.
 
 ## Exemples :
 

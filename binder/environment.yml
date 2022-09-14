@@ -1,0 +1,6 @@
+name: embedding_project
+channels:
+  - defaults
+dependencies:
+  - python=3.10.4
+  - numpy=1.23.1
