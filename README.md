@@ -96,14 +96,22 @@ python3 main.py argv[1] argv[2] argv[3] argv[4] argv[5]
 
 ## Exemples :
 
+### Best case : optimal alignment
+
 ```bash
-python3 main.py adk_2ak3a.t5emb ADK_2AK3A.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta
 ```
 
-Your can try with other sequences and alignment methods :
+### Worst case
 
 ```bash
-python3 main.py 5_3_exonuclease_1bgxt.t5emb 5_3_EXONUCLEASE_1BGXT.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw
-python3 main.py 5_3_exonuclease_1bgxt.t5emb 5_3_EXONUCLEASE_1BGXT.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta sw
-python3 main.py 5_3_exonuclease_1bgxt.t5emb 5_3_EXONUCLEASE_1BGXT.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta gl
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta 7kD_DNA_binding_1azpa.t5emb 7KD_DNA_BINDING_1AZPA.fasta
+```
+
+### Methode varirety
+
+```bash
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
+python3 main.py 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta adk_2ak3a.t5emb ADK_2AK3A.fasta nw
 ```
