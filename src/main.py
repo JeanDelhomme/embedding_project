@@ -41,9 +41,6 @@ file.txt
     result repository.
 
 """
-# ligne de commande 
-# python3 main.py 5_3_exonuclease_1bgxt.t5emb 5_3_EXONUCLEASE_1BGXT.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw
-# python3 main.py adk_2ak3a.t5emb ADK_2AK3A.fasta 6PF2K_1bif.t5emb 6PF2K_1BIF.fasta nw
 
 # Importation of common modules.
 import sys
